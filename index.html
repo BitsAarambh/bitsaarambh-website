@@ -5,98 +5,404 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BITSAARAMBHA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./aboutsection.css">
+    <link rel="stylesheet" href="./contact_us.css">
+    <link rel="stylesheet" href="./team.css">
+    <link rel="stylesheet" href="./service.css">
+   
+
 </head>
 
 <body>
+    <div class="scroll-progress"></div>
 
     <!-- Header Section -->
     <header>
-        <div class="container">
-            <h1>BITSAARAMBHA COMPANY</h1>
-            <nav>
-                <a href="#about">About Us</a>
-                <a href="#services">Services</a>
-                <a href="#team">Our Team</a>
-                <a href="#contact">Contact</a>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-rocket"></i>
+                BITSAARAMBHA
+            </a>
+            
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <a href="#about">
+                        <i class="fas fa-info-circle"></i>
+                        About
+                    </a>
+                    <div class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-history"></i>
+                            Company History
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-trophy"></i>
+                            Achievements
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-chart-line"></i>
+                            Growth
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#services">
+                        <i class="fas fa-cogs"></i>
+                        Services
+                    </a>
+                    <div class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-user-check"></i>
+                            User Onboarding
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-briefcase"></i>
+                            Job Management
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-users-cog"></i>
+                            Employer Solutions
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#team">
+                        <i class="fas fa-users"></i>
+                        Team
+                    </a>
+                    <div class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-user-tie"></i>
+                            Leadership
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-code"></i>
+                            Developers
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-headset"></i>
+                            Support
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="nav-item">
+                    <a href="#contact">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                    <div class="dropdown">
+                        <a href="#">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Locations
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-phone-alt"></i>
+                            Support
+                        </a>
+                        <a href="#">
+                            <i class="fas fa-comments"></i>
+                            Social Media
+                        </a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-
-    <!-- Hero Section -->
+<!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Welcome to Your Company</h2>
-            <p>We provide high-quality solutions to help your business succeed.</p>
-            <a href="#contact" class="btn">Get Started</a>
+            <h2>Welcome </h2>
+            <p>Revolutionizing Workforce Solutions with AI-Driven Innovation</p>
+            <a href="#contact_us_container" class="btn">Start Your Journey</a>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>We are a leading company delivering exceptional products and services to our customers worldwide.</p>
-        </div>
-    </section>
+   
 
     <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-list">
-                <div class="service-item">
-                    <h3>User Onboarding &Login</h3>
-                    <p>Aadhar-Base-Login, Auto-fills name,age,address for faster registration.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Finding & Accepting Jobs</h3>
-                    <p>Browse Job Listings,Apply or Accept Instant Jobs,Get Notified,Work & Submit Completion Report,Recive Payment.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Employer posts jobs & hires</h3>
-                    <p>Post a Job,Get AI-Suggested Workers,Shortlist & Hire,Track Workforce in Real-Time,approve Payment,Rate & Review Worker.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Admine Flow</h3>
-                    <p>User Verification & Background Check,Automated Job-Worker Matching System,payroll & compalication processing,Analytics Dashboard for Demand & Supply Trends</p>
-            </div>
+   <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+        <div class="service-item">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <p>We create modern, responsive, and user-friendly websites tailored to your business needs.</p>
         </div>
-    </section>
+        <div class="service-item">
+            <i class="fas fa-server"></i>
+            <h3>Backend Development</h3>
+            <p>We build robust backend systems using Spring Boot and Java, ensuring scalability and high performance.</p>
+        </div>
+    </div>
+</section>
 
     <!-- Our Team Section -->
-    <section id="team" class="team">
+    <!-- <section id="team" class="team">
         <div class="container">
             <h2>Meet Our Team</h2>
             <p>Our team of professionals is dedicated to delivering the best results for our clients.</p>
         </div>
-    </section>
+    </section> -->
 
     <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+    <section class="contact_us_container" id="contact_us_container">
+        <div class="contact_us_form">
+            <div class="contact_us_contact-info">
+                <h3 class="contact_us_title">Let's get in touch</h3>
+                <p class="contact_us_text">
+                    Thank you for your interest in BitsAarambh. Whether you’re a client, job seeker, journalist, analyst or investor, you can find the best way to contact us below.
+                </p>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <div class="contact_us_info">
+                    <div class="contact_us_information">
+                        <img src="img/icons8-location.gif" class="contact_us_icon" alt="Location">
+                        <p>Amravati, Maharashtra 444601</p>
+                    </div>
+                    <div class="contact_us_information">
+                        <img src="img/icons8-email.gif" class="contact_us_icon" alt="Email">
+                        <p>dhirajpandit2@.com</p>
+                    </div>
+                    <div class="contact_us_information">
+                        <img src="img/icons8-call.gif" class="contact_us_icon" alt="Phone">
+                        <p>9096670476</p>
+                    </div>
+                </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="contact_us_social-media">
+                    <p>Connect with us :</p>
+                    <div class="contact_us_social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
 
-                <button type="submit">Send Message</button>
-            </form>
+            <div class="contact_us_contact-form">
+                <div id="contact_us_error"></div>
+                <form id="contact_us_form" action="/" method="GET">
+                    <h3 class="contact_us_title">Contact us</h3>
+                    <div class="contact_us_input-container">
+                        <span>Username</span>
+                        <input id="contact_us_name" type="text" name="name" class="contact_us_input"  placeholder="Username" required>
+                        
+                    </div>
+                    <div class="contact_us_input-container">
+                        <span>Email</span>
+                        <input id="contact_us_email" type="email" name="email" placeholder="Email" class="contact_us_input" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    <div class="contact_us_input-container">
+                        <span>Phone</span>
+                        <input id="contact_us_phone" type="tel" name="phone" placeholder="Phone" class="contact_us_input" required>
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
+                    <div class="contact_us_input-container textarea">
+                      <span>Message</span>
+                        <textarea name="message" class="contact_us_input" placeholder="Message"></textarea>
+                       
+                        
+                    </div>
+                    <input type="submit" value="Send" class="contact_us_btn">
+                </form>
+            </div>
         </div>
     </section>
 
+     <!-- About Us Section -->
+     <section class="about">
+        <h1>ABOUT US</h1>
+        <p>Bitsaarambha is a forward-thinking software engineering company committed to delivering innovative and high-quality technology solutions. Our team of skilled professionals specializes in developing cutting-edge software applications, websites, and digital products that empower businesses to thrive in the digital era.</p>
+        
+        <div class="founder">
+            <img src="/image/founder.jpeg" alt="Dhiraj Pandit">
+            <h3>Mr. Dhiraj Pandit</h3>
+            <p>Founder of Bitsaarambha</p>
+        </div>
+    </section>
+
+    
+
+    <section class="mission-vision">
+        <div class="box">
+            <i class="fas fa-book"></i>
+            <h2>Mission</h2>
+            <p>We aim to bridge the gap between technology and business by crafting scalable, efficient, and customized solutions. Our mission is to drive digital transformation and innovation, making technology more accessible and impactful.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-globe"></i>
+            <h2>Vision</h2>
+            <p>Our vision is to be a globally recognized technology solutions provider, known for our expertise in software development, client-focused approach, and commitment to excellence.</p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2 class="team-title">Meet Our Team</h2>
+            <div class="team-members">
+                <!-- Founder Card -->
+                <div class="team-member">
+                    <img src="./image/founder/dhiraj.jpg" alt="Founder">
+                    <h3>Mr.Dhiraj Pandit</h3>
+                    <p class="role">Founder & CEO</p>
+                    <p class="description">Dhiraj is the driving force behind our company, leading with innovation and passion.</p>
+                </div>
+                <!-- Co-Founder Card -->
+                <div class="team-member">
+                    <img src="./image/founder/swapnil.jpg" alt="Co-Founder">
+                    <h3>Mr.Swapnil Chude</h3>
+                    <p class="role">Co-Founder & CTO</p>
+                    <p class="description">Swapnil is the tech mastermind, ensuring seamless innovation and excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+        <div class="row">
+          <div class="col">
+           
+            <h2>Office</h2>
+            <p>Near Dafade Hospital</p>
+            <p>Rukhmini Nagar, Amravati</p>
+            <p>Maharashtra</p>
+           <br> <p>Email: <a href="mailto:dhirajpandit2@gmail.com">dhirajpandit2@gmail.com </a></p>
+            <br><p>Phone: <a href="tel:+919096670476">+91 9096670476</a></p>
         </div>
-    </footer>
+     
+            
+
+          <div class="col">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            
+             <footer_form>
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter your email id" required>
+                <button  type="submit"> <i class="fa-solid fa-arrow-right"></i></i></button>
+             </footer_form>  
+             <div class="social-icons">
+                <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">© 2025 Bitsaarambha. All rights reserved.</p>
+    </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // DOM Elements
+        const form = document.getElementById("contact_us_form");
+        const nameInput = document.getElementById("contact_us_name");
+        const emailInput = document.getElementById("contact_us_email");
+        const phoneInput = document.getElementById("contact_us_phone");
+        const errorDiv = document.getElementById("contact_us_error");
+        const emailError = document.getElementById("email-error");
+        const phoneError = document.getElementById("phone-error");
+
+        // Regex Patterns
+        const emailRegex = /^[a-zA-Z0-9]+([._][a-zA-Z0-9]+)*@gmail\.com$/; // Gmail specific
+        // const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // General email regex
+        const phoneRegex = /^[6-9]\d{9}$/;
+
+        // Real-time Email Validation
+        emailInput.addEventListener('input', validateEmail);
+        emailInput.addEventListener('blur', validateEmail);
+
+        // Real-time Phone Validation
+        phoneInput.addEventListener('input', validatePhone);
+        phoneInput.addEventListener('blur', validatePhone);
+
+        function validateEmail() {
+            const value = emailInput.value.trim();
+            const isValid = emailRegex.test(value);
+
+            if (!isValid && value !== '') {
+                emailInput.classList.add('invalid-input');
+                emailError.textContent = 'Please enter a valid Gmail address';
+                emailError.style.display = 'block';
+            } else {
+                emailInput.classList.remove('invalid-input');
+                emailError.style.display = 'none';
+            }
+            return isValid;
+        }
+
+        function validatePhone() {
+            const value = phoneInput.value.trim();
+            const phoneRegex = /^[6-9]\d{9}$/;
+            const isValid = phoneRegex.test(value);
+    
+            if (!isValid && value !== '') {
+                phoneInput.classList.add('invalid-input');
+                phoneError.textContent = 'Enter valid 10-digit Indian number starting with 6-9';
+                phoneError.style.display = 'block';
+            } else {
+                phoneInput.classList.remove('invalid-input');
+                phoneError.style.display = 'none';
+            }
+            return isValid;
+        }
+    
+        // Update form submission handler
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            errorDiv.innerHTML = '';
+            
+            let errors = [];
+            let isValid = true;
+    
+            // Name validation
+            if (nameInput.value.trim() === '') {
+                errors.push("Username is required");
+                isValid = false;
+            }
+    
+            // Email validation
+            if (!validateEmail()) {
+                errors.push("Invalid email address");
+                isValid = false;
+            }
+    
+            // Phone validation
+            if (!validatePhone()) {
+                errors.push("Invalid phone number");
+                isValid = false;
+            }
+    
+            if (!isValid) {
+                errorDiv.innerHTML = errors.join("<br>");
+            } else {
+                // Submit the form
+                this.submit();
+            }
+        });
+    });
+    </script>
+
+    <script src="./app.js"></script>
 
 </body>
 

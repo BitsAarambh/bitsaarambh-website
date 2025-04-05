@@ -1,0 +1,158 @@
+
+/* Footer */
+footer {
+    background:linear-gradient(to right, #00093c ,#2d0b00); 
+    color: white;
+    bottom: 0;
+    padding: 40px 0 10px;
+    line-height: 20px;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 0;
+}
+
+.row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: left;
+    justify-content: center;
+}
+.col{
+    flex-basis: 25%;
+    padding: 20px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 20%;
+}
+
+.col h2{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+    font-weight: 24px;
+    font-size: 30px;
+   font-family: 'Times New Roman', Times, serif;
+}
+.col p{
+    text-align: justify;
+  
+}
+.col p a{
+    color: white;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+    
+}
+
+
+ul li{
+    
+    list-style: none;
+    margin-bottom: 12px;
+    font-weight: 18px;
+    text-align: justify;
+}
+ul li a{
+
+    color: #f3f3f3;
+   
+}
+footer_form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px
+}
+footer_form .far{
+      font-size: 18px;
+      margin-left: 10px;
+}
+footer_form i{
+    font-size: 22px;
+}
+footer_form input{
+    width: 100%;
+    background:transparent ;
+    color: #ccc;
+    border:0;
+    outline: none;
+    margin-left: 10px;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Social Media Links */
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Icon size */
+    height: 50px;
+    border-radius: 50%; /* Circular icons */
+    font-size: 24px; /* Icon size */
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Individual Social Media Colors */
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.instagram { background: #e4405f; }
+.linkedin { background: #0077b5; }
+
+/* Hover Effect */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Social Media Links */
+.social-icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; /* Icon size */
+    height: 30px;
+    border-radius: 50%; /* Circular icons */
+    font-size: 18px; /* Icon size */
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Individual Social Media Colors */
+.facebook { background: #3b5998; }
+.twitter { background: #1da1f2; }
+.instagram { background: #e4405f; }
+.linkedin { background: #0077b5; }
+
+/* Hover Effect */
+.social-icons a:hover {
+    transform: scale(1.1); /* Enlarge on hover */
+    opacity: 0;
+}
+hr{
+    margin: 20px auto;
+    border: 0;
+    width: 90%;
+    border-bottom: 1px solid #ccc;
+}
+.copyright{
+ text-align: center;
+}
