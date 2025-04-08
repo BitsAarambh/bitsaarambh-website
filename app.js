@@ -20,43 +20,31 @@ document.querySelectorAll('.btn').forEach(btn => {
 });
 
 document.addEventListener("DOMContentLoaded", function() { // Wait for DOM to load
-    document.getElementById("contact_us_form").addEventListener("submit", function (event) {
-        event.preventDefault();
-        let email = document.getElementById("contact_us_email").value.trim();
-        let phone = document.getElementById("contact_us_phone").value.trim();
-        let errorDiv = document.getElementById("contact_us_error");
-
-        errorDiv.innerHTML = "";
-        errorDiv.style.color = "red";
-
-        let emailRegex = /^[a-zA-Z0-9]+([._][a-zA-Z0-9]+)*@gmail\.com$/;
-        let phoneRegex = /^[6-9]\d{9}$/;
-
-        let isValid = true;
-        let errorMessage = [];
-
-        if (!emailRegex.test(email)) {
-            errorMessage.push("Invalid Gmail address.");
-            isValid = false;
+    document.getElementById('contact_us_form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Prevent actual form submission
+    
+        const username = document.getElementById('contact_us_name').value.trim();
+        const email = document.getElementById('contact_us_email').value.trim();
+        const phone = document.getElementById('contact_us_phone').value.trim();
+        const message = document.getElementById('contact_us_message').value.trim();
+    
+        if (!username || !email || !message) {
+          alert('Please fill in all required fields.');
+          return;
         }
-
-        if (!phoneRegex.test(phone)) {
-            errorMessage.push("Invalid phone number.");
-            isValid = false;
+    
+        // Optional: Email validation
+        const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        if (!email.match(emailPattern)) {
+          alert('Please enter a valid email address.');
+          return;
         }
-
-        if (!isValid) {
-            errorDiv.innerHTML = errorMessage.join("<br>"); // Display errors with line breaks
-        } else {
-            // Add validation for other required fields (e.g., name) here
-            if (document.getElementById("contact_us_name").value.trim() === "") {
-                errorDiv.innerHTML = "Username is required.";
-                isValid = false;
-            }
-        }
-
-        if (isValid) {
-            this.submit(); // Submit only if all validations pass
-        }
-    });
+    
+        // Handle the form data (e.g., send to server or show confirmation)
+        console.log({ username, email, phone, message });
+        alert('Thank you for contacting us!');
+        
+        // Optional: Reset the form
+        document.getElementById('contact_us_form').reset();
+      });
 });
